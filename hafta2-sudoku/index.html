@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./index.js"></script>
+  </head>
+
+  <header>
+    <h1>Sudoku⚔</h1>
+    <div id="setup-game">
+
+       
+      <div id="diff">
+          <h3 text-color: rgb(80, 0, 171)>Choose Difficulty😣 : </h3>
+          <label><input type="radio" name="diff" id="diff-1" value="easy" checked>Easy</label>
+          <label><input type="radio" name="diff" id="diff-2" value="medium">Medium</label>
+          <label><input type="radio" name="diff" id="diff-3" value="hard">Hard</label>
+      </div>
+
+      
+      <div id="time">
+          <h3 text-color: rgb(80, 0, 171)>Timer⏰ : </h3>
+          <label><input type="radio" name="time" id="time-1" value="three" checked>3 min</label>
+          <label><input type="radio" name="time" id="time-2" value="five">5 min</label>
+          <label><input type="radio" name="time" id="time-3" value="ten">10 min</label>
+      </div>
+  </div>
+  <button id="start-btn">✨Create New Game (Click for start)✨</button>
+</header>
+
+<body>
+
+ 
+  <div id="stats">
+      <p id="timer"></p>
+      <p id="lives"></p>
+  </div>
+
+  <div id="game">
+      <div id="board"></div>
+      <div id="number-container" class="hidden">
+          <p id="one">1</p>
+          <p id="two">2</p>
+          <p id="three">3</p>
+          <p id="four">4</p>
+          <p id="five">5</p>
+          <p id="six">6</p>
+          <p id="seven">7</p>
+          <p id="eight">8</p>
+          <p id="nine">9</p>
+      </div>
+  </div>
+  
+</body>
+  <footer>
+<p>Made By Ayben 🎈 </p>
+  </footer>
+</html>
