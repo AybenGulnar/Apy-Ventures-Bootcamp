@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA</title>
+    <style>
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: all 0.1s;
+        }
+
+        .body {
+            margin: auto;
+            width: 960px;
+            padding: 10px; 
+            margin-bottom: 6%;
+            margin-top: 120px;
+            border-radius: 10px;
+        }
+
+        .footer {
+            color: rgb(210, 248, 255);
+            margin-bottom: 0px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="body" id="id"></div>
+    <script>
+        images = "";
+        for (let i = 0; i < 9; i++) { 
+            images += `<img src="https://source.unsplash.com/random/300X300?sig=${i}">`;    
+        }
+        document.getElementById("id").innerHTML = images;
+    </script>
+    
+    <div class="footer">
+        <p>&copy; 2019 - AA</p>
+    </div>
+</body>
+</html>
